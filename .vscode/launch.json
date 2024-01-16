@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'natuyaday_nightly_funkin'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=natuyaday_nightly_funkin",
+                    "--package=natuyaday_nightly_funkin"
+                ],
+                "filter": {
+                    "name": "natuyaday_nightly_funkin",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "BEVY_ASSET_ROOT": "${workspaceFolder}",
+                "PATH": "${env:USERPROFILE}/.rustup/toolchains/nightly-x86_64-pc-windows-msvc/bin;${workspaceFolder}/target/debug/deps;${env:PATH}",
+            },
+        }
+    ]
+}
